@@ -7,7 +7,6 @@ testing *italics*
 
 testing **bold**
 
-<u>underline</u>
 ## hello
 ### hello
 #### hello
