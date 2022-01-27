@@ -6,6 +6,8 @@ this should be a second paragragh
 testing *italics*
 
 testing **bold**
+
+<u>underline</u>
 ## hello
 ### hello
 #### hello
