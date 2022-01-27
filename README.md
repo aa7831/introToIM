@@ -7,7 +7,15 @@ testing *italics*
 
 testing **bold**
 
-## hello
+1. one
+2. two
+3. three
+4. four
+5. five
+
+## picture
+![picture_1]{hello_world.jpg}
+
 ### hello
 #### hello
 ##### hello
