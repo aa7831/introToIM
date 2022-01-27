@@ -14,7 +14,7 @@ testing **bold**
 5. five
 
 ## picture
-![picture_1] (hello_world.png)
+![picture_1](hello_world.png)
 
 ### hello
 #### hello
