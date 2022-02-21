@@ -16,9 +16,10 @@
   
     ```
 
-let latRange = []; //this array will save min and max latitude 
+    let latRange = []; //this array will save min and max latitude 
 
-let longRange = []; //this array will save min and max longitude
+    let longRange = []; //this array will save min and max longitude
+    
     ```
   </li>
   
