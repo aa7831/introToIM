@@ -12,16 +12,14 @@
   <li>I downloaded the dataset from Kaggle.</li>
   <li>When I tried uploading this csv file on p5js, an error was thrown: the file was too big</li>
   <li>The original dataset had around 270,000 records. I edited the spreadsheet so it only included 40,000 records. This allowed me to update the file on p5js </li>
-  <li>After loading the dataset in the program, I had to find the minimum and maximum values of latitude and longitude in order to map it into the canvas size. 
+  <li>After loading the dataset in the program, I had to find the minimum and maximum values of latitude and longitude in order to map it into the canvas size. </li>
   
-    ```
+  ```
+  
+let latRange = []; //this array will save min and max latitude 
 
-    let latRange = []; //this array will save min and max latitude 
-
-    let longRange = []; //this array will save min and max longitude
-    
-    ```
-  </li>
+let longRange = []; //this array will save min and max longitude
+  ```
   
   
 
