@@ -1,4 +1,4 @@
-#Idea
+# Idea
 <ul>
   <li>I found a dataset of the crimes in Atlanta on Kaggle. Click [here](https://www.kaggle.com/omarhossam214/atlantacrimedata?select=atlcrime.csv) to find the dataset.</li>
   <li>In this dataset, there were 2 fields that were of interest: longitude and latitude values.</li>
@@ -7,7 +7,7 @@
   <li>Using this visualization, you should be able to see where the most crimes take place by looking at how dark the region is. This makes sense because more points would be plotted in the region. </li>
 </ul>
 
-#Process
+# Process
 <ol>
   <li>I downloaded the dataset from Kaggle.</li>
   <li>When I tried uploading this csv file on p5js, an error was thrown: the file was too big</li>
@@ -36,6 +36,6 @@ let ypos = map(latitudes[i], latRange[0], latRange[1], 0,height);
 
 </ol>
 
-#Output
+# Output
 ![](program_output.png)
     
