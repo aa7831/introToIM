@@ -1,6 +1,6 @@
 # Idea
 <ul>
-  <li>I found a dataset of the crimes in Atlanta on Kaggle. Click [here](https://www.kaggle.com/omarhossam214/atlantacrimedata?select=atlcrime.csv) to find the dataset.</li>
+  <li>I found a dataset of the crimes in Atlanta on Kaggle. You can find the dataset here: https://www.kaggle.com/omarhossam214/atlantacrimedata?select=atlcrime.csv.</li>
   <li>In this dataset, there were 2 fields that were of interest: longitude and latitude values.</li>
   <li>I wanted to use these values to plot a point on the locations where a crime had taken place </li>
   <li>The final output should resemble the map of Atlanta.</li>
