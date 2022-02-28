@@ -28,3 +28,7 @@ I wrote a small program to test if the eggs would appear from random chickens an
   <li>I used object oriented programming for everything so that I would not need to write the same code again and for ease of use </li>
   <li>Note that in the test program, I did not include images as I only wanted to test my understanding of the solution I had in mind. I will be adding these later. </li>
 </ul>
+
+This is what the final output looks like:
+
+![gif](demo.gif)
