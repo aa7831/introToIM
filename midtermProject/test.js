@@ -127,6 +127,7 @@ function setup() {
 
 function draw() {
   if(frameCount % 60 === 0){
+    //add an egg every second
     game.add_egg();
   }
   game.move();
