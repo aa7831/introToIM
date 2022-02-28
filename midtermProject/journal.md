@@ -2,6 +2,9 @@
 
 ##Initial Concep
 I will try to recreate the egg catch game that was famous during the early 2000. It was a classical arcade game, here's an image:
+
+
+
 ![](egg_catch.png)
 
 The objective of the game is to control a basket with your mouse to catch eggs that the chickens drop. You lose a life whenever an egg is missed and the game is over when the user runs out of lives. The score corresponds to the number of eggs that the user has caught.
