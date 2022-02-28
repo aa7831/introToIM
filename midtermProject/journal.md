@@ -1,6 +1,6 @@
 # EGG CATCH
 
-##Initial Concep
+## Initial Concept
 I will try to recreate the egg catch game that was famous during the early 2000. It was a classical arcade game, here's an image:
 
 
