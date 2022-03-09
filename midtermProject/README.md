@@ -4,7 +4,7 @@ Aftering figuring out the hard part, I started implementing the game. Here is wh
   <li>Replace the shapes from the initial test with images.</li>
   <li>Check if the egg has been caught or not by the basket. I did this by making both the image of the basket and the image of eggs as rectangles. This made it easy for me to detect "collisions" between the egg and the basket by making sure the eggs fall within the range of x and y axis of the basket. Here's the piece of code that handles collision detection:
     
-    ```
+    
       checkCatch(){
     //this method checks if an egg has been caught in the basket.
     let basketX = this.basket.getX();
@@ -16,6 +16,6 @@ Aftering figuring out the hard part, I started implementing the game. Here is wh
       eggX = this.eggs[0].getX();
       eggY = this.eggs[0].getY();
     }
-    ```
+    
   </li>
   </ul>
