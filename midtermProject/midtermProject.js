@@ -6,7 +6,7 @@ Date: 1 March, 2022
 
 //REMEMBER TO INCLUDE SOUND LIBRARY
 
-const WIDTH_GAME = 700; //width of canvas
+const WIDTH_GAME = 650; //width of canvas
 const HEIGHT_GAME = 500; //height of canvas
 const EGG_SIZE = 30;
 const BASKET_WIDTH = 80;
@@ -17,6 +17,11 @@ let chickenImg; //this variable will hold the image of the chicken
 let eggImg; //this variable will hold the image of the egg
 let basketImg; //this variable will hold the image of the basket
 let bgImg; //this variable will hold the background image
+
+let bgSound; //this variable will hold the background music
+let eggSound; //this variable will hold the sound played when an egg is caught
+let lostSound; //this variable will hold the sound played when the game is lost
+let missedSound; //this variable will hold the sound played when an egg is missed
 
 //this is a 2D array of the position of chickens. Each element of the array contains the position of 1 chicken. Right now, there are 3 chickens right now. For example, the position of the first chicken will be at x = 100 and y = 50.
 let chicken_positions = [
@@ -38,6 +43,12 @@ function preload(){
   eggImg = loadImage("egg.png");
   basketImg = loadImage("basket.png")
   bgImg = loadImage("background.jpeg");
+  
+  //load sounds here
+  bgSound = loadSound("background.mp3");
+  eggSound = loadSound("egg.mp3");
+  lostSound = loadSound("lost.mp3");
+  missedSound = loadSound("missed.mp3");
 }
 
 //class for chickens
@@ -74,6 +85,7 @@ class Egg {
   }
 
   bottom() {
+    //returns true if the egg has left the canvas
     return this.y >= HEIGHT_GAME - EGG_SIZE;
   }
   move() {
@@ -118,7 +130,10 @@ class Basket{
   
   update(x){
     //updates the x coodinate according to the mouse 
-    this.x = x;
+    if(x >= BASKET_WIDTH && x<= WIDTH_GAME-BASKET_WIDTH){
+      //only update if the mouse is within the canvas
+      this.x = x;
+    }
   }
   
   view(){
@@ -175,6 +190,8 @@ class Game {
         //if the egg has left the screen without being caught, remove it from the array and decrease the user health by 1 unit.
         this.eggs = subset(this.eggs,1);
         this.health -= 1;
+        //play sound for missing egg
+        missedSound.play();
       }
     }
     
@@ -203,6 +220,8 @@ class Game {
         this.eggs = subset(this.eggs,1,this.eggs.length-1);
         //add score
         this.score +=1;
+        //play sound
+        eggSound.play();
       }
     }
     
@@ -261,6 +280,11 @@ function draw() {
         //add an egg every second
         game.add_egg();
       }
+      
+      //play the sound on loop
+      if(!bgSound.isPlaying()){
+        bgSound.play();
+      }
 
       game.checkCatch();
       game.move();
@@ -270,7 +294,10 @@ function draw() {
     }
     else{
       //game has been lost
+      bgSound.pause(); //stop playing the backgrund sound
+      lostSound.play(); //play the lost sound
       lost = true;
+      noLoop();
     }
   }
   
@@ -403,6 +430,7 @@ function mouseClicked(){
         lost = false;
         menu = true;
         DIFFICULTY = "EASY";
+        loop();
       }
     }
   }
