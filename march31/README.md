@@ -19,6 +19,9 @@
   <li>Adruino on one side of the door and breadboard on the other side meant that the wire would break if the door is opened too much. In order to solve this, instead of placing the boards near the door knob, I placed them near the hinge where movement is minimal. This allowed me to make the circuit without the need of joining multiple wires or the danger of wires breaking when the door opens.</li>
 </ol>
 
+# Picture of the setup
+!()[door_picture.HEIC)
+
 # Video demonstration
 
 ![gif](door_demo.gif)
