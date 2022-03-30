@@ -20,7 +20,7 @@
 </ol>
 
 # Picture of the setup
-!()[door_picture.HEIC)
+!()[door_picture.png)
 
 # Video demonstration
 
