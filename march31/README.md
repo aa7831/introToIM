@@ -20,7 +20,7 @@
 </ol>
 
 # Picture of the setup
-!()[door_picture.png)
+!()(door_picture.png)
 
 # Video demonstration
 
