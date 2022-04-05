@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![](analog.png)
+![](analog.jpeg)
   
 ## Digital Input
   <ul>
@@ -50,5 +50,5 @@
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
     ````
 </ul>
-![](digital.png)
+![](digital.jpeg)
 
