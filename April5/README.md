@@ -40,6 +40,8 @@
   
 ![](https://github.com/aa7831/introToIM/blob/main/April5/analog_setup.jpg)
   
+https://user-images.githubusercontent.com/90097437/161665191-c4d837d0-044e-40e5-a14c-9087cfec5a0c.mp4
+  
 ## Digital Input
   <ul>
     <li>This part of the assignment was straight forward.</li>
@@ -57,4 +59,8 @@
 ![](https://github.com/aa7831/introToIM/blob/main/April5/digital.jpeg)
 
 ![](https://github.com/aa7831/introToIM/blob/main/April5/digital_setup.jpg)
+
+
+
+
 
