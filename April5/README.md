@@ -36,6 +36,7 @@
   ```
                      
 </ul>
+  
 ## Digital Input
   <ul>
     <li>This part of the assignment was straight forward.</li>
