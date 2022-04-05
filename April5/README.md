@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![picture](analog.jpg)
+![picture](analog.jpeg)
 
   
   
