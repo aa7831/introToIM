@@ -42,11 +42,11 @@
     <li>I added 3 LED lights on the breadboard, 2 buttons and the required wires (see picture of setup / schematics for reference) </li>
     <li>Most of the work was done in the code, which was also quite straight forward. </li>
     <li>Everytime the button was pressed, the LED would switch to the next one. I used the modulus function here as followed: </li>
-   
-    ```
+  
+    
     if(digitalRead(BUTTON) == HIGH){
       //button pressed
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
-    ```
+    
 </ul>
   
