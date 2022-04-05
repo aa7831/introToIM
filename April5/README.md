@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![schematic](https://github.com/aa7831/introToIM/blob/main/April5/analog.jpeg)
+![schematic](/analog.jpeg)
 
   
   
