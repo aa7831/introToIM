@@ -48,7 +48,5 @@
       //button pressed
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
     ```
-    
-    <li>In addition to this, I added a second button which would turn all the LEDS off.</li>
-  </ul>
+</ul>
   
