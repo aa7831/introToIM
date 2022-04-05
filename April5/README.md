@@ -51,5 +51,5 @@
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
     ````
 </ul>
-![](digital.jpeg)
+![](https://github.com/aa7831/introToIM/blob/main/April5/digital.jpeg)
 
