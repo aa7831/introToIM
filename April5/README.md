@@ -19,23 +19,23 @@
   <li>The sensor shoots sounds waves of 40,000 HZ and is able to detect when they are "echoed" back. This means that if there is an object in the trajectory, the sound waves will bounce off of them and return to the sensor.</li>
   <li>The use of this sensor required mathematical equations involving speed, time and distance.</li>
   <li>Here are some important notes: speed of sound is 340 ms^-1, distance = speed / time, and finally (most important), we need to divide the time by 2. This is because the time that the sensor records is for the sound wave to leave the sensor, hit the object, and return back to the sensor. This means 2 laps are completed instead of one. </li>
-  ```
+  ````
     distance= time*0.034/2; //calculating the distance. We multiply by 0.034 because speed of sound is 340 ms^-1. 
   //Division by 2 is required because the time we get is for the waves to hit the object AND return i.e., twice the distance.
-  ```
+  ````
   <li>After figuring this out, it was quite easy to get the light to blink. Everytime an object came close to the sensor (low distance value), the light would turn on.</li>
   <li>The following code takes care of the above statement:</li>
   
-  ```
+  ````
     if(distance<=15){ //if any object is within range 15, the light turns on
     digitalWrite(LED_PIN,HIGH);
   }
   else{ //when the object leaves or if there is no object within the range, the light is turned off.
     digitalWrite(LED_PIN,LOW);
   } 
-  ```
-                     
+  ````
 </ul>
+![](analog.png)
   
 ## Digital Input
   <ul>
@@ -44,10 +44,11 @@
     <li>Most of the work was done in the code, which was also quite straight forward. </li>
     <li>Everytime the button was pressed, the LED would switch to the next one. I used the modulus function here as followed: </li>
   
-    
+    ````
     if(digitalRead(BUTTON) == HIGH){
       //button pressed
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
-    
+    ````
 </ul>
-  
+![](digital.png)
+
