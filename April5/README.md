@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![analog](https://user-images.githubusercontent.com/90097437/161662403-26fae484-afc5-41ce-8469-f29f62af17d2.jpeg)
+![picture](analog.jpeg)
 
   
   
