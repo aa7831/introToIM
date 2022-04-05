@@ -25,6 +25,7 @@
   ```
   <li>After figuring this out, it was quite easy to get the light to blink. Everytime an object came close to the sensor (low distance value), the light would turn on.</li>
   <li>The following code takes care of the above statement:</li>
+  
   ```
     if(distance<=15){ //if any object is within range 15, the light turns on
     digitalWrite(LED_PIN,HIGH);
@@ -34,7 +35,7 @@
   } 
   ```
                      
-                     </ul>
+</ul>
 ## Digital Input
   <ul>
     <li>This part of the assignment was straight forward.</li>
