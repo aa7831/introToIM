@@ -35,9 +35,8 @@
   } 
   ````
 </ul>
-![](/analog.jpeg)
-
   
+![](https://github.com/aa7831/introToIM/blob/main/April5/analog.jpeg)
   
 ## Digital Input
   <ul>
