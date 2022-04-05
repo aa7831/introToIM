@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![](analog.jpeg)
+![](/analog.jpeg)
 
   
   
