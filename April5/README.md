@@ -1,6 +1,6 @@
 # Idea
 <ul>
-  <li>I wanted to make something different for the switches (analog and digital).</li>
+  <li>I wanted to make something different for each of the switches (analog and digital).</li>
   <li>For the analog input, I wanted to use a sensor that we have not yet used in the class and is interesting. The ultrasonic sensor caught me eye.</li>
   <li>I want to do something that is often seen with sensors: collision detections (this reminds me of Tesla's autopilot system, which is obviously a lot more complex) </li>
   <li>So, whenever an object gets too close to the ultrasonic sensor, an LED light will go off (I chose a red LED as it signifies danger).</li>
@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![picture](analog.jpeg)
+![]("analog.jpeg")
 
   
   
