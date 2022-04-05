@@ -35,7 +35,7 @@
   } 
   ````
 </ul>
-![schematic] (/analog.jpeg)
+![](analog.jpeg)
 
   
   
@@ -52,5 +52,5 @@
       LED_NUMBER = ( LED_NUMBER + 1 ) % NUM_LEDS;
     ````
 </ul>
-![] (digital.jpeg)
+![](digital.jpeg)
 
