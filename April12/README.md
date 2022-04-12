@@ -11,7 +11,7 @@ A simple mini-piano that plays different melodies when different keys are presse
   <li>Pivoting from the original idea, Mishel and I decided to use cardboard instead of wood for the piano.</li>
   <li>Going off of guides online, we wanted to use conductive ink but the IM lab did not have these. Then, we discovered force sensors.</li>
   <li>The idea was simple: when the user presses a cardboard tile, it would increase the reading of the force sensor attached beneath the tile which would activate a note in turn.</li>
-  <li>However, we ran into another problem. Here is a video of the complication: </li>
+  <li>However, we ran into another problem. Here is a video of the complication (sound on): </li>
   
   
 
