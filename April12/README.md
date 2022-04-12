@@ -39,6 +39,13 @@ https://user-images.githubusercontent.com/90097437/162854970-f0434d49-5d3c-4b82-
   <li>The code works by storing a previous state of the button as well as the current state. See the code file in this repository for more detail</li>
 </ul>
 
+# Schematic and Design Picture
+<img width="740" alt="Diagram" src="https://user-images.githubusercontent.com/90097437/162865929-942f9ec8-b028-4e94-b53f-474a500a47c8.png">
+
+<img width="908" alt="Schematic" src="https://user-images.githubusercontent.com/90097437/162865933-cc46938b-2892-4c00-8dfc-a1c69e067dc5.png">
+
+
+
 # Final Product
 
 https://user-images.githubusercontent.com/90097437/162855893-c99e4501-6e29-4f5d-a4aa-f69588f4fe44.mp4
