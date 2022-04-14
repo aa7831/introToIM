@@ -12,9 +12,11 @@ Working with my group, we came up with the solutions.
 <ul>
   <li>For the first prompt, we used a potentiometer to control an ellipse on p5. As the user rotates the potentiometer, the x-axis of the ellipse is changed.</li>
   <li>We had the map the values of the poteniometer from 0 - 1023 to 0-the width of the canvas. Here's the piece of code that takes care of this task: </li>
+  
   ````
   ellipse(map(int(latestData),0,1023,0,width),height/2,40,20)
   ````
+  
   <li>The latest data refers to the analog reading taken from the arduino device. It first has to be converted to an integer using the int() function.</li>
   <li>The y axis, width, and height of the ellipse stay constant throughout the program. Only the x-axis changes.
 </ul>
