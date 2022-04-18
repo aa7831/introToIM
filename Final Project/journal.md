@@ -1,6 +1,6 @@
 # Initial Idea and Team Members
 <ul>
-  <li> **Team Members**: Abdullah and Mishel. </li>
+  <li>Team Members: Abdullah and Mishel. </li>
   <li>We plan on making a remote control car.</li>
   <li>This will require the use of p5js, 2 arduinos, and a car that we will build using materials from the IM Lab and the wheels in the sparksfun inventor kit.</li>
   <li>One arduino will be connected to a laptop at all time to send and receive data with p5js.</li>
