@@ -7,3 +7,4 @@
   <li>This arduino will also send data to the other arduino using some sort of connection (radio waves maybe). It is still unclear how we plan on executing this.</li>
   <li>The second arduino will be attached to the remote control car and its component. It will be powered using batteries or a power bank.</li>
   <li>The second arduino will decode the instructions sent by the user through p5js and the first arduino to make movements on the car.</li>
+  <li>The use of two arduinos is necessary as we need 1 to be connected to a laptop to take input from the user and a second one connected to the car's components. </li>
