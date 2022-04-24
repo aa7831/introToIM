@@ -33,3 +33,48 @@
 <ul>
   <li>LEDs on the car with light sensor as well. If it gets too dark in the room, the LEDS will light up automatically. </li>
 </ul>
+
+# Process, Problems, Solutions
+<ul>
+  <li>Since the IM lab is closed, we are working on one arduino at the time and will work on the communication later. </li>
+  <li>The goal is to make a working car that moves. </li>
+  <li>We started off by following an online tutorial but did not make much progress. </li>
+  <li>So, decided to start working on our own. </li>
+  <li>Connected the arduino and breadboard to the platform provided in the sparkfun starter kit. </li>
+  <li>Connected 4 wheels to 4 motors and attached these to the bottom of the platform. </li>
+  <li>Here is a weird error we ran into: </li>
+  
+  
+
+https://user-images.githubusercontent.com/90097437/165000892-2b80bf87-d844-40d4-9294-dd109d4fdc01.mp4
+
+  <li>Could not figure out the problem. So we decided to take the car apart and do everything over again. This seemed to fix the issue. </li>
+  <li>A video of everything working fine: </li>
+
+https://user-images.githubusercontent.com/90097437/165000916-0762c6ee-2bc3-4ae5-923e-cb6fa5a136ff.mp4
+
+  <li>To test how the car deals with different terrains, we took it outside to test: </li>
+
+https://user-images.githubusercontent.com/90097437/165000933-cf796715-4be2-4434-b33c-e3678001a450.mp4
+
+
+  <li>After everything started working, we added an ultrasonic sensor that would stop the car in case it gets too close to an object. When the object is removed, it starts moving again. </li>
+  <li>This will be modified later to work with p5js: it will show a warning message along with warning sounds on p5js. </li>
+  <li>This was fairly simple to implement. </li>
+  <li>The ultrasonic sensor works by shooting out sound waves and measuring the time it takes for the wave to echo back. Using this, we can detect the distance from any object in the car's trajectory. </li>
+  <li>After calculating the distance, we can apply the implementation mentioned above: the car stops when it gets too close to an object. </li>
+  <li>Here are two videos showing this: </li>
+  
+https://user-images.githubusercontent.com/90097437/165001063-1a7d864c-dfe2-4ebc-8820-dcbdf2f77fce.mp4
+
+https://user-images.githubusercontent.com/90097437/165001080-f67562c3-5338-4ab5-a34b-d1dba02aa27b.mp4
+
+</ul>
+
+# Pictures of development:
+
+## 90% Mark:
+
+![IMG_3655 HEIC](https://user-images.githubusercontent.com/90097437/165001143-64834cf5-e205-4a39-b2ab-8bff447b992c.png)
+
+    
