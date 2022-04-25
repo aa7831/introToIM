@@ -35,6 +35,7 @@
 </ul>
 
 # Process, Problems, Solutions
+### 24 April, 2022
 <ul>
   <li>Since the IM lab is closed, we are working on one arduino at the time and will work on the communication later. </li>
   <li>The goal is to make a working car that moves. </li>
@@ -68,6 +69,8 @@ https://user-images.githubusercontent.com/90097437/165000933-cf796715-4be2-4434-
 https://user-images.githubusercontent.com/90097437/165001063-1a7d864c-dfe2-4ebc-8820-dcbdf2f77fce.mp4
 
 https://user-images.githubusercontent.com/90097437/165001080-f67562c3-5338-4ab5-a34b-d1dba02aa27b.mp4
+  
+  <li>Something that we found helpful was: when you are working with a lot of wires and connections, it is helpful to note down the locations (pins) of these connections on a piece of paper for reference later because the arduino gets messy and it is hard to track them later on. </li>
 
 </ul>
 
