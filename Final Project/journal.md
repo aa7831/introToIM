@@ -74,6 +74,26 @@ https://user-images.githubusercontent.com/90097437/165001080-f67562c3-5338-4ab5-
 
 </ul>
 
+### 25 April
+<ul>
+  <li>Tried implementing communication between two arduinos using the nRF24L01 module. </li>
+  <li>The first issue we faced was the shape of the pins on the module - they required soldering. </li>
+  <li>Since we have not covered soldering in this class, we improvised and used female-male header wires in order to connect the modules with the arduinos.</li>
+  <li>Following a guide online, we could not get the modules to work. Although they were turned on (I could feel them getting hot), data transmitted and received was random: </li>
+  <li>After spending several hours working on this with little success, we decided to leave this for another day and the professor for assistance. </li>
+  
+</ul>
+
+### 30 April
+<ul>
+  <li>After asking the professor about the module in class, a minimal example was shared with us: https://github.com/michaelshiloh/resourcesForClasses/blob/master/src/arduinoSketches/nRF24L01/minimalnRF/minimalnRF.ino </li>
+  <li>Also realised the issue with our previous attempts. The pin layout in the tutorials was incorrectly labeled.</li>
+  <li>At first, we used the same example used in the link above without the optional LED just to see if the modules were working. However, it was difficult to tell if it was because of the complicated value being transmitted in the example above. </li>
+  <li>In order to make it a bit simpler, we transmitted a single value that is incremented by 1 everytime it is transmitted (code in this repository). This made it easier to tell if the communication was happening. </li>
+  <li>Finally, after testing, we were able to make the modules communicate. This will be used to establish remote control signals with the car. </li>
+ 
+</ul>
+
 # Pictures of development:
 
 ## 90% Mark:
