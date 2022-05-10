@@ -94,10 +94,68 @@ https://user-images.githubusercontent.com/90097437/165001080-f67562c3-5338-4ab5-
  
 </ul>
 
+### 10 MAY
+<ul>
+  <li> A lot of progress today: communication established, car controls finalised and lights added. </li>
+  <li> We decided to switch from an arduino uno to an arduino Mega as uno did not have enough pins to support 4 motors, nrf module and the LEDS along with sensors </li>
+  <li> Used laser cutter to cut plastic to make the base of the car. The old one did not support the size of arduino uno and the larger breadboard. </li>
+  <li> Established communication between the two arduinos. </li>
+  <li> Started off by testing forward and backward movement of car. Below are the results: </li>
+
+https://user-images.githubusercontent.com/90097437/167526121-8aef865d-d30c-47d9-9abf-d046d75a673e.mp4
+
+  <li> Working on this, tried to implement all four directions. This proved to be a bit tricky but here is the working solution: </li>
+   <ul>
+     <li>To turn right, wheels on the left side go forward and the wheels on the right side go backward. The resultant force is clockwise (right). </li>
+     <li>The opposite to turn left. Wheels on the rigth side go forward and the wheels on the left side go backward creating an anticlockwise resultant force. </li>
+  </ul>
+  
+  <li>Here is the working video: </li>
+  
+https://user-images.githubusercontent.com/90097437/167526366-3f9c8a85-5e32-4b76-a6b2-56460c2067ac.mp4
+
+  <li> After completing this, we moved onto the creative part of the project: introducing an ultrasonic sensor to detect objects with the car. </li>
+  <li> However, adding an ultrasonic sensor resulted with the arduino short-circuting. We do not know why this is happening. </li>
+  <li> Improvising, we fell back on our backup plan: adding LED lights on the arduino. </li>
+  <li> Added 2 LED lights as well as a LDR sensor. </li>
+  <li> When the surrouning of the car is dark, the LEDs turn on automatically. Find the code for this in the repository. </li>
+  <li> Finally, since we did not have double A cells at the moment, we attached the car using a power bank for the time being. This will be switched to cells later. The battery holder will be attached under the car as we have left some space for it. </li>
+</ul>
+
+## USER TESTING
+<ul>
+  <li> Asked random people at the IM lab, outside on campus as well as our friends to test the car. </li>
+  <li> The response was quite consistent. Here is the overview: </li>
+  <li> Positive feedback: </li>
+  <ul>
+    <li> The car is responive to keyboard clicks. </li>
+    <li> The LEDs work as expected: in a dark environment, or if we turn the lights of suddenly, the LEDS turn on automatically. They also turn off if the environment is lit again. </li>
+    <li> Turning is quite responsive and smooth as well. </li>
+  </ul>
+  
+  <li> Points for improvement: </li>
+  <ul>
+    <li> At a time, the car can only move in one direction. For example, it is not possible to move forward and right at the same time. </li>
+    <li> Having to hold the power bank with the car as batteries are not yet attached. </li>
+    <li> Acceleration is instant and too fast. </li>
+  </ul>
+</ul>
+
+## Response to user testing
+<ul>
+  <li> The ability to move in multiple directions at the same time is something not possible at the time with the materials we have in hand. However, we will try to implement this with discussion with the professor as well as our peers. This may require the use of different wheels or more motors. </li>
+  <li> We will attach double A cells with a battery holder to the car tomorrow. This will fix this issue that users are experiencing. We could not do this today as the IM lab was out of working cells - we will buy some from the convenience store.</li>
+  <li> We will try to introduce an "acceleration" system for forward and backward movement. If the keys are held consistently, the speed increases accordingly. This will make the speed more controllable and smooth - similar to an actual car. </li>
+</ul>
+
 # Pictures of development:
 
 ## 90% Mark:
 
 ![IMG_3655 HEIC](https://user-images.githubusercontent.com/90097437/165001143-64834cf5-e205-4a39-b2ab-8bff447b992c.png)
 
-    
+## Complete Project: 
+
+
+![picture-min](https://user-images.githubusercontent.com/90097437/167527480-5975f2a1-5d1d-4b92-b32e-c2452547496a.png)
+
