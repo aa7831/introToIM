@@ -141,6 +141,18 @@ https://user-images.githubusercontent.com/90097437/167526366-3f9c8a85-5e32-4b76-
   </ul>
 </ul>
 
+### Videos of user-testing feedback
+
+Note that we only included two feedbacks as the rest were redundant points. 
+
+https://user-images.githubusercontent.com/90097437/167528467-ec7e0894-1991-49cb-a484-2e2bb9fa5ef2.mp4
+
+
+
+https://user-images.githubusercontent.com/90097437/167528851-52b18e1f-27c6-4946-9f2e-bc19d82d5363.mp4
+
+
+
 ## Response to user testing
 <ul>
   <li> The ability to move in multiple directions at the same time is something not possible at the time with the materials we have in hand. However, we will try to implement this with discussion with the professor as well as our peers. This may require the use of different wheels or more motors. </li>
