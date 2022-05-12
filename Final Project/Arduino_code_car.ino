@@ -60,6 +60,8 @@ const int LDR_PIN = A0;
 const int LED1 = 44;
 const int LED2 = 45;
 
+//is the car moving?
+bool moving;
 
 RF24 radio(CEPIN, CSNPIN);  // CE, CSN -- INITIALIZING RADIO
 
@@ -125,6 +127,7 @@ void loop() {
 
     analogWrite(pwmBPin, 255);
     analogWrite(pwmBPin_2,255);
+    moving = true;
 
     if(data == 1){
       //GO FORWARD 
@@ -159,6 +162,7 @@ void loop() {
     }
     else if (data == 3){ 
       //STOP 
+      moving = false;
       //Simply turn the speed to 0 for all motors
       analogWrite(pwmAPin, 0);
       analogWrite(pwmAPin_2, 0);
@@ -196,10 +200,74 @@ void loop() {
       digitalWrite(bin2Pin, HIGH);
       digitalWrite(bin2Pin_2,HIGH); 
     }
+    else if (data == 6){
+      //forward and left
+      //back wheels turn forward
+      // forward RIGHT WHEEL FORWARD, forward LEFT WHEEL BACKWARDS
+      digitalWrite(ain1Pin, HIGH); 
+      digitalWrite(ain1Pin_2,LOW);  
+
+      digitalWrite(ain2Pin, LOW); 
+      digitalWrite(ain2Pin_2,HIGH);
+
+      digitalWrite(bin1Pin, LOW);  
+      digitalWrite(bin1Pin_2,HIGH);
+
+      digitalWrite(bin2Pin, HIGH);
+      digitalWrite(bin2Pin_2,LOW);
+    }
+    else if(data == 7){
+      //back and left
+      //front wheels turn backward
+      //back left forward, back right backward
+      digitalWrite(ain1Pin, HIGH); 
+      digitalWrite(ain1Pin_2,HIGH); 
+
+      digitalWrite(ain2Pin, LOW);
+      digitalWrite(ain2Pin_2,LOW);
+
+      digitalWrite(bin1Pin, LOW);  
+      digitalWrite(bin1Pin_2,LOW);
+
+      digitalWrite(bin2Pin, HIGH);
+      digitalWrite(bin2Pin_2,HIGH); 
+    }
+    else if (data == 8){
+      //forward and right
+      //back wheels go forward
+      //forward right backward, forward left forward
+      digitalWrite(ain1Pin, LOW); 
+      digitalWrite(ain1Pin_2,HIGH);  
+
+      digitalWrite(ain2Pin, HIGH); 
+      digitalWrite(ain2Pin_2,LOW);
+
+      digitalWrite(bin1Pin, LOW);  
+      digitalWrite(bin1Pin_2,HIGH);
+
+      digitalWrite(bin2Pin, HIGH);
+      digitalWrite(bin2Pin_2,LOW);
+    }
+    else if (data == 9){
+      //backward and right
+      //forward wheels back.
+      //back left wheel backward, back right wheel forward
+      digitalWrite(ain1Pin, HIGH); 
+      digitalWrite(ain1Pin_2,HIGH); 
+
+      digitalWrite(ain2Pin, LOW);
+      digitalWrite(ain2Pin_2,LOW);
+
+      digitalWrite(bin1Pin, HIGH);  
+      digitalWrite(bin1Pin_2,HIGH);
+
+      digitalWrite(bin2Pin, LOW);
+      digitalWrite(bin2Pin_2,LOW); 
+    }
   }
 
   int LDR_READING = analogRead(LDR_PIN); //reading the LDR sensor
-  if(LDR_READING < 200){ //if too dim, lights turn on
+  if(LDR_READING < 100 && !moving){ //if too dim, lights turn on
     Serial.println("LIGHTS COMING ON");
     digitalWrite(LED1,HIGH);
     digitalWrite(LED2,HIGH);
