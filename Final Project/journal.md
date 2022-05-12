@@ -98,7 +98,7 @@ https://user-images.githubusercontent.com/90097437/165001080-f67562c3-5338-4ab5-
 <ul>
   <li> A lot of progress today: communication established, car controls finalised and lights added. </li>
   <li> We decided to switch from an arduino uno to an arduino Mega as uno did not have enough pins to support 4 motors, nrf module and the LEDS along with sensors </li>
-  <li> Used laser cutter to cut plastic to make the base of the car. The old one did not support the size of arduino uno and the larger breadboard. </li>
+  <li> Used laser cutter to cut plastic to make the base of the car. The old one did not support the size of arduino Mega and the larger breadboard. </li>
   <li> Established communication between the two arduinos. </li>
   <li> Started off by testing forward and backward movement of car. Below are the results: </li>
 
@@ -155,7 +155,9 @@ https://user-images.githubusercontent.com/90097437/167528851-52b18e1f-27c6-4946-
 
 ## Response to user testing
 <ul>
-  <li> The ability to move in multiple directions at the same time is something not possible at the time with the materials we have in hand. However, we will try to implement this with discussion with the professor as well as our peers. This may require the use of different wheels or more motors. </li>
+  <li> The ability to move in multiple directions at the same time is something not possible at the time with the materials we have in hand. However, we will try to implement this with discussion with the professor as well as our peers. This may require the use of different wheels or more motors. 
+  UPDATE: Editing the code with the existing car to make it move in multiple directions. However, the turning speed is relatively slow as to when turning alone. This is because we are using only two wheels for turning in this new implemention. To test different speeds of turning, you can simply turn in both directions and compare that with only turning in one direction. 
+  </li>
   <li> We will attach double A cells with a battery holder to the car tomorrow. This will fix this issue that users are experiencing. We could not do this today as the IM lab was out of working cells - we will buy some from the convenience store.</li>
   <li> We will try to introduce an "acceleration" system for forward and backward movement. If the keys are held consistently, the speed increases accordingly. This will make the speed more controllable and smooth - similar to an actual car. </li>
 </ul>
