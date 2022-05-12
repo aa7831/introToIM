@@ -47,3 +47,10 @@ https://user-images.githubusercontent.com/90097437/168001533-968e7480-83e9-4922-
   <li>https://github.com/michaelshiloh/resourcesForClasses/tree/master/src/arduinoSketches/nRF24L01 </li>
 </ol>
 
+# Future improvements
+<ul>
+  <li>3D Print a case for the car so the wires are hidden from the eye. </li>
+  <li>Add two-way communication between the car and the transmitter module for improved user interaction on p5js. </li>
+  <li>Figure out a way to include the ultrasonic sensor without short-circuiting the board. </li>
+</ul>
+
